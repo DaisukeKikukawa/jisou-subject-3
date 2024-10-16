@@ -1,12 +1,14 @@
-import './App.css'
+import { Button, ChakraProvider } from '@chakra-ui/react';
 
 function App() {
 
   return (
     <>
-      <h1>hoge</h1>
+    <ChakraProvider>
+      <Button colorScheme="teal">Button</Button>
+    </ChakraProvider>
     </>
-  )
+  );
 }
 
 export default App
